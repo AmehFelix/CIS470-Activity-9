@@ -1,5 +1,6 @@
 // Importing the main function
 const main = require('../main');
+const getPreviousDate = require('../modules/getPreviousDate');
 
 
 // Step 1: Making Stub Functions for all modules used by the main function
@@ -19,9 +20,13 @@ jest.mock('../modules/getNextDate'.getNextDate, () => ({
 }));
 
 
-// Stub function for getPreviousDate
-// jest.mock('../modules/getPreviousDate'.getPreviousDate, () => ({
-// ..
+//Stub function for getPreviousDate
+jest.mock('../modules/getPreviousDate'.getPreviousDate, () => ({
+  getPreviousDate: jest.fn().mockImplementation((month, day, year) => {
+    return { motnh: 4, day: 16, year: 2024}; // Mocked output for 4/16/2024
+  })
+
+}));
 
 
 
@@ -55,6 +60,7 @@ describe('Top-Down Integration Test for the Main Function', () => {
     const expectedOutput = {
       'Test Date': { month: 4, day: 17, year: 2024 },
       'Next Day': { month: 4, day: 18, year: 2024 },
+      'Previous Day': {month: 4, day: 16, year: 2024},
       'Day of the Week': 'Wednesday',
       'Zodiac Sign': 'Aries',
       'Last Day of Month': 30,
