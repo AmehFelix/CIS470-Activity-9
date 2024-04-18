@@ -4,7 +4,7 @@
 A-D are implemented in the code
 E:
 
-<img src="./img/functionaldecomposition.drawio.png" width="300">
+<img src="./img/functionaldecomposition.png" width="300">
 
 ## PART 2 (20 points)
 
