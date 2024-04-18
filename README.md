@@ -4,11 +4,11 @@
 A-D are implemented in the code
 E:
 
-<img src="./img/functionaldecomposition.png" width="300">
+<img src="./img/functionaldecomposition.png" width="600">
 
 ## PART 2 (20 points)
 
-<img src="./img/callgraph.drawio.png" width="300">
+<img src="./img/callgraph.drawio.png" width="600">
 
 ## PART 3 (20 points)
 
@@ -29,5 +29,5 @@ E:
 
 ## PART 4 (20 points)
 
-<img src="./img/modulemessage.drawio.png" width="300">
+<img src="./img/modulemessage.drawio.png" width="600">
 
